@@ -1,0 +1,136 @@
+.r-driver-blog{
+	margin-top:30px; position: relative; z-index: 2;
+	.r-drivers{
+		background:#fff; position:relative; min-height:240px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+		.r-drivers-detail{ padding-top:60px; position:relative; z-index:1; max-width: 200px;
+			.name { font-size:22px; margin-bottom:27px; line-height:23px; font-weight:500; color:#333; border-left:solid 3px $accent_color; padding-left: 33px;}
+			.text{ font-size:14px; color:#999; font-weight:400; padding-left:36px;}
+			.icon{ font-size:18px;  padding-left:36px; padding-top:40px;color:#ccc;
+                a{
+                    color: #bdbdbd;
+                    -webkit-transition: all 0.2s linear;
+                    -moz-transition: all 0.2s linear;
+                    -ms-transition: all 0.2s linear;
+                    transition: all 0.2s linear;
+                    &:hover{
+                        color: $accent_color;
+                    }
+                }
+                i{ margin-right:10px;}
+			}
+		}
+		.drivers-img{ position:absolute; right:0; bottom:0;}
+		&:hover{box-shadow: 0 0 30px #ccc; cursor:pointer;}
+	}
+}
+.r-driver-blog-dark{
+    background-image: url("../images/driver-bg-dark.jpg"); background-repeat: no-repeat; background-size: cover; padding-bottom: 125px;
+    .r-sec-head{
+        span{color: #fff;}
+        h2{color: $accent_color;}
+        &::after{color: rgba(69, 71, 72, 0.88);}
+	}
+	&.r-driver-blog-dark-theme-2{
+		background-image: url("../images/royal-car-driver-bg.jpg");
+	}
+}
+
+.r-driver-blog-light{
+    background: #f8f8f8; padding-bottom: 125px;
+    .r-sec-head{
+        span{color: #333;}
+        h2{color: #000;}
+        &::after{color: #f1f1f1;}
+    }
+}
+
+.r-car-option-tab{ 
+	text-align: center; border: none; display: block; margin-bottom: 40px;
+	li.nav-item{
+		float: none; display: inline-block;
+		a.nav-link{
+			border: 1px solid #e1e1e1; padding: 10px 25px; font-weight: 500; display: inline-block; margin: 0 10px; border-radius: 0; color: #000;
+			&.active,&:hover{background-color: $accent_color; border: 1px solid $accent_color; color: #fff;}
+		}
+	} 
+}
+
+.r-faq-option-tab{
+	text-align: right; border: none; display: block; margin-top: -20px;
+	li.nav-item{
+		float: none; display: inline-block;
+		a.nav-link{
+			i{display: block; text-align: center; margin-bottom: 10px; font-size: 22px;}
+			border: none; padding: 0; font-weight: 500; display: inline-block; text-transform: uppercase; margin: 0 15px; border-radius: 0; color: #dddddd;
+			&.active,&:hover{
+				color: #000;
+				i{color: $accent_color;}
+			}
+		}
+	} 
+}
+
+@media (max-width: 1400px){
+	.r-driver-blog .r-drivers .r-drivers-detail .name{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.r-driver-blog .r-drivers .r-drivers-detail{
+		padding-top: 40px;
+	}
+
+}
+
+
+@media (max-width: 1200px){
+	.r-driver-blog-dark,
+	.r-driver-blog-light{
+		padding-bottom: 80px;
+	}
+	.r-driver-blog .r-drivers{
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.r-driver-blog-dark,
+	.r-driver-blog-light{
+		padding-bottom: 30px;
+	}
+	.r-faq-option-tab{
+		li.nav-item{
+			a.nav-link{font-size: 10px; margin: 25px 3px 15px;}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.r-driver-blog{
+		margin-top: 0;
+		.r-drivers .r-drivers-detail {
+			.name{
+				font-size: 16px;
+				padding-left: 15px;
+			}
+			.text{
+				font-size: 13px;
+				padding-left: 20px;
+			}
+			.icon{
+				font-size: 16px;
+				padding-left: 20px;
+			}
+		}
+	}
+
+	.r-driver-blog-dark, .r-driver-blog-light{
+		.pt-5{
+			padding-top: 1rem !important;
+		}
+	}
+
+}

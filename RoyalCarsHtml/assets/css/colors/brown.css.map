@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,0EAA0E;EAAC,UAAU,EADtE,OAAO;;AAEtB,gCAAgC;EAAC,KAAK,EAFvB,OAAO;;AAGtB,gCAAgC;EAAC,WAAW,EAAE,eAAe;EAAE,mBAAmB,EAAE,eAAe;;AAEnG,mDAAmD;EAC/C,gBAAgB,EANL,OAAO;;AAQtB,WAAY;EACR,gBAAgB,EATL,OAAO;EASe,KAAK,EAAE,IAAI",
+"sources": ["../../scss/colors/brown.scss"],
+"names": [],
+"file": "brown.css"
+}

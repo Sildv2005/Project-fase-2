@@ -1,0 +1,139 @@
+.r-quote{
+	background-color: #f8f8f8; padding-top: 100px; padding-bottom: 125px; position: relative;
+	&::after{content:"\f10d"; font-family: fontawesome; position: absolute; width: 100%; text-align: center; font-size: 150px; color: #eeeeee; top: 0;}
+	.carousel-item{
+		padding-bottom: 30px;
+		p{
+			font-size: 25px; line-height: 36px; color: #333333; text-align: center; max-width: 950px; margin-left: auto; margin-right: auto;
+		}
+	}
+	.container{position: relative; z-index: 99;}
+}
+.r-quote-noafter{
+	&::after{display: none;}
+	.r-sec-head{
+		&::after{color: #f1f0f0;}
+	}
+}
+
+#r-quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 0;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#r-quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#r-quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#r-quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#r-quote-carousel .carousel-indicators li {
+    width: 60px;
+    height: 60px;
+    margin: 5px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: visible;
+    transition: all 0.4s;
+}
+.carousel-indicators {
+	position: static;
+	li{max-width: 60px; top: 20px; position: relative; img{border-radius: 50%; margin: auto;} span{display: none;}}
+	li.active{
+		max-width: 100px; top: 0;
+		img{margin-bottom: 15px;}
+		span{
+			color: #999999; display: inline; font-size: 14px; position: relative;
+			b{font-size: 16px; color: #000; font-weight: 500;}
+		}
+	}
+}
+#r-quote-carousel .carousel-indicators .active {
+    background: none;
+    width: 120px;
+    margin: 0;
+    height: 120px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: visible;
+    max-width: 150px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+@media (max-width: 1400px){
+	.r-quote{
+		padding-bottom: 80px;
+	}
+	.r-quote .carousel-item p{
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 1200px){
+	#r-quote-carousel{
+		margin-top: 10px;
+	}
+	.r-quote .carousel-item p{
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.r-quote{
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	.r-quote{
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.r-quote{
+		padding-bottom: 30px;
+		&::after{
+			font-size: 110px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.r-quote .carousel-item {
+		padding-bottom: 10px;
+		p{
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+
+	.carousel-indicators li.active span {
+		font-size: 12px;
+		b{
+			font-size: 14px;
+		}
+	}
+
+}

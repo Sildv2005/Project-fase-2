@@ -1,0 +1,296 @@
+
+.r-slider-item{
+	position: relative;
+	.container{
+		background-color: transparent !important;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-70%);
+    -moz-transform: translate(-50%,-70%);
+    -ms-transform: translate(-50%,-70%);
+    transform: translate(-50%,-70%);
+  }
+  .r-slider-top-content{
+    ul{
+      padding-left: 0; list-style: none; @extend .clearfix;
+      li{
+        display: inline-block; color: #aaaaaa; background-color: #f4f4f4; padding: 2px 12px;
+        &:hover{background-color: $accent_color;  color: #fff;}
+        i{font-size: 12px; display: inline-block; margin-right: 5px;}
+        span{font-size: 11px;}
+      }
+    }
+    display: inline-block;
+    text-align: center;
+    float: right;
+    h1{
+      font-size: 120px;
+      color: #fff;
+      font-weight: 600;
+      span{
+        font-weight: 700;
+        color: $accent_color;
+        font-style: italic;
+      }
+    }
+    h4{
+      color: #fff;
+      font-weight: 300;
+      font-size: 23px;
+      letter-spacing: 0.27em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      strong{
+        font-weight: 700;
+      }
+    }
+    .btn-outlined{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      display: inline-block;
+      padding: 20px 50px;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      border-radius: 0;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+      &:hover{
+        background: $accent_color;
+        border-color: $accent_color;
+      }
+    }
+  }
+}
+
+.r-slider{
+  .owl-nav{
+    .owl-prev,
+    .owl-next{
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 36px;
+      background: rgba(#fff,0.5);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+      i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: rgba($accent_color_black, 0.7);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -ms-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+      }
+      &:hover{
+        background: $accent_color_black;
+        i{
+          color: #fff;
+        }
+      }
+    }
+    .owl-prev{
+      left: 60px;
+    }
+    .owl-next{
+      right: 60px;
+    }
+  }
+
+  .owl-dots{
+    counter-reset: listCount;
+    position: absolute;
+    bottom: 250px;
+    right: 60px;
+    .owl-dot{
+      display: inline-block;
+      & + .owl-dot{
+        margin-left: 15px;
+      }
+      &::before{
+        counter-increment: listCount;
+        content: counter(listCount,decimal-leading-zero);
+        font-size: 18px;
+        color: #cccccc;
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -ms-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+      }
+      &.active{
+        border-bottom: 2px solid $accent_color;
+        &::before{
+          font-size: 25px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1400px){
+  .r-slider-item .r-slider-top-content {
+    h1{
+      font-size: 80px;
+    }
+    h4{
+      font-size: 14px;
+    }
+   .btn-outlined{
+      padding: 12px 30px;
+      font-size: 14px;
+   }
+  }
+
+
+	.r-slider .owl-dots{
+		bottom: 180px;
+	}
+
+  .r-slider .owl-nav .owl-prev, .r-slider .owl-nav .owl-next{
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .r-slider .owl-nav .owl-prev{
+    left: 30px;
+  }
+  .r-slider .owl-nav .owl-next{
+    right: 30px;
+  }
+  .r-slider .owl-dots .owl-dot::before{
+    font-size: 14px;
+  }
+  .r-slider .owl-dots .owl-dot.active::before{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1100px){
+	.r-slider-item {
+		.r-slider-top-content {
+			h1{
+				font-size: 60px;
+			}
+			h4{
+				font-size: 13px;
+			}
+			.btn-outlined{
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.r-slider .owl-dots{
+		bottom: 10px;
+	}
+	.r-slider-item .container{
+		padding-right: 100px;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	.r-slider .owl-nav .owl-prev, .r-slider .owl-nav .owl-next{
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.r-slider-item .r-slider-top-content {
+			h1{
+				font-size: 50px;
+			}
+			h4{
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+		 .btn-outlined{
+				padding: 12px 30px;
+				font-size: 12px;
+		 }
+	}
+
+
+	.r-slider .owl-nav .owl-prev, .r-slider .owl-nav .owl-next{
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 767px){
+	.r-slider-item {
+		.container{ 
+			padding: 0;
+			width: 100%;
+			max-width: 300px;
+		}
+		.r-slider-top-content{
+			display: block;
+			text-align: center;
+			width: 100%;
+			 h1{
+				font-size: 26px; margin-bottom: 10px !important;
+			}
+			h4{
+				font-size: 13px;
+				margin-bottom: 6px !important;
+			}
+			.btn-outlined{
+				padding: 10px 15px;
+			}
+		}
+	}
+  .r-slider-item .r-slider-top-content ul li{padding: 2px 8px;} 
+	.r-slider {
+		.owl-dots{
+			right: 30px;
+		}
+		.owl-nav{
+			.owl-prev{
+				left: 15px;
+			}
+			.owl-next{
+				right: 15px;
+			}
+		}
+	}
+
+	.r-slider .owl-dots .owl-dot{
+		&::before{
+			font-size: 13px;
+		}
+		&.active{
+			&::before{
+				font-size: 16px;
+			}
+		}
+	}
+
+}

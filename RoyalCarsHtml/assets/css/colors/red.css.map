@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,0EAA0E;EAAC,UAAU,EADxE,OAAO;;AAEpB,6IAA2I;EAAC,KAAK,EAFpI,OAAO;;AAGpB,gCAAgC;EAAC,WAAW,EAAE,eAAe;EAAE,mBAAmB,EAAE,eAAe;;AACnG,8IAA+I;EAC3I,MAAM,EAAE,kBAAkB;;AAE9B,oDAAqD;EACjD,gBAAgB,EARP,OAAO",
+"sources": ["../../scss/colors/red.scss"],
+"names": [],
+"file": "red.css"
+}

@@ -1,0 +1,131 @@
+.r-login-register{
+	background-color: #f8f4da; padding: 130px 0;
+	.r-login-register-in{
+		max-width: 830px; margin: auto; position: relative; width: 98%;
+		.r-auth-or{
+			position: absolute; left: 0; right: 0; margin: auto; height: 100%; width: 2px; background-color: $accent_color; max-height: 380px; bottom: 0;
+			span{background: $accent_color; color: #fff; position: absolute; bottom: 0; width: 32px; height: 32px; border-radius: 50%; line-height: 32px; top: 0; margin: auto; font-size: 14px; font-weight: 600; left: -14px; letter-spacing: 0.5px; text-align: center;}
+		}
+		.clearfix{
+			> div.r-auth-outer{max-width: 360px; float: left; width: 100%;}
+			> div.r-auth-outer:last-child{float: right;}
+		}
+		.r-auth-head{
+			margin-bottom: 40px;
+			span{font-size: 14px; font-weight: 500; margin-bottom: 0; display: block;}
+			h2{font-size: 40px; font-weight: 400;}
+		}
+		.r-auth-form{
+			form{
+				.form-group{margin-bottom: 10px;}
+				input{padding: 15px; border-radius: 0; height: 50px; border: none; font-family: $site-font; color: #a9a9a9;}
+				button{font-weight: 600;}
+			}
+		}
+		.r-or-line{
+			text-align: center; position: relative; margin: 25px 0;
+			&::after{position: absolute; left: 0; height: 1px; content:""; width: 100%; background-color: #acac9d; top: 12px;}
+			span{background-color: #f8f4da; padding: 0 20px; z-index: 99; color: #acac9d; font-size: 12px;  font-weight: 600; text-transform: uppercase; position: relative; display: inline-block;}
+		}
+		.r-from-inof{
+			margin-top: 20px;
+			p{font-size: 14px; margin-bottom: 0;}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.r-login-register{
+		padding: 80px 0;
+	}
+
+	.r-login-register{
+		.r-login-register-in{
+			.r-auth-head {
+				margin-bottom: 30px;
+				h2{
+					font-size: 36px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.r-login-register{
+		padding: 50px 0;
+		.r-login-register-in{
+			.r-auth-head {
+				margin-bottom: 30px;
+				h2{
+					font-size: 32px;
+				}
+			}
+		}
+		.r-login-register-in .r-auth-form form input{
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 1023px){
+	.r-login-register{
+		.r-login-register-in{
+			.clearfix{
+				> div.r-auth-outer{max-width: 320px;}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.r-auth-outer{
+		margin: 0 auto;
+		margin-bottom: 0px !important;
+		& + .r-auth-outer{
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #333;
+		}
+	}
+	.r-login-register .r-login-register-in{
+		width: 90%;
+		.clearfix > div.r-auth-outer{
+			width: 100%; float: none !important; margin-bottom: 50px;
+		}
+		.r-auth-or{display: none;}
+	}
+
+	.r-login-register{
+		padding: 30px 0;
+		.r-login-register-in{
+			.r-auth-head {
+				margin-bottom: 20px;
+				h2{
+					font-size: 28px;
+				}
+			}
+		}
+	}
+	.r-login-register .r-login-register-in .r-auth-form form input{
+		height: 40px;
+	}
+	.r-login-register .r-login-register-in .r-auth-form .btn-full{
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	.r-login-register{
+		padding: 30px 0;
+		.r-login-register-in{
+			.r-auth-head {
+				margin-bottom: 20px;
+				h2{
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}

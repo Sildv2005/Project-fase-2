@@ -1,0 +1,44 @@
+$accent_color: #ffcd00;
+$accent_color_black: #333333;
+$color-white: #ffffff;
+$site-font: 'Poppins', sans-serif;
+
+$facebook_color: #365493;
+$twitter_color: #3CF;
+$google_color: #d44132;
+$email_color: #F89A1E;
+$instagram_color: #dd2a7b;
+$behance_color: #053eff;
+$google_color: #d34836;
+
+.fa-facebook:hover{color: $facebook_color;}
+.fa-twitter:hover{color: $twitter_color;} 
+.fa-instagram:hover{color: $instagram_color;}
+.fa-behance:hover{color: $behance_color;}
+.fa-google-plus:hover{color: $google_color;}
+
+.r-transition-fast{-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear; transition: all 0.2s linear;}
+.r-transition-mid{-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; transition: all 0.4s linear;}
+
+/*
+COLOR CUSTOMIZER
+*/
+.r-customizer.r-customizer_toggle {left: 0;}
+.r-customizer{width: 260px; background: #FFFFFF; position: fixed; top: 30%; left: -260px; padding:20px 20px 0px; @extend .r-transition-mid; z-index: 99999;}
+.r-selector h1{font: 20px/22px $site-font; color: #000000; text-align: center; margin: auto;} 
+.r-color_section{margin-top: 15px; padding-top: 15px; border-top: 1px solid #e8e8e8;}
+.r-color_section span{font: 15px/18px $site-font; color: #000000; text-align: center; display: block;}
+.r-color_section p{font: 13px/18px $site-font; color: #969696;}
+.r-color_section ul{padding: 0;}
+.r-color_section li{width: 40px; height: 40px; margin: 0px 5px 5px; cursor: pointer; display: inline-block; @include border-radius(5px); @extend .r-transition-mid; border: 2px solid transparent;}
+.r-color_section li.r-color_selector:hover{border-color: #e5e5e5;}
+.r-color_selector .r-color_1{background: #79bedb;}
+.r-color_selector .r-color_2{background: #8cc739;}
+.r-color_selector .r-color_3{background: #ba6222;}
+.r-color_selector .r-color_4{background: #cc0000;}
+.r-color_selector .r-color_5{background: #84596b;}
+.r-color_selector .r-color_6{background: #ff9900;}
+.r-color_selector .r-color_7{background: #ff717e;}
+.r-color_selector .r-color_8{background: #ffcd00;}
+.r-customizer i {background: #ffffff none repeat scroll 0 0; cursor: pointer; color: #000000; font-size: 27px; height: 50px; line-height: 50px; position: absolute; right: -50px; text-align: center; top: 0; width: 50px;}
+.r-body_overlay::after {background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0; content: ""; height: 100%; position: fixed; top: 0; width: 100%; z-index: 999;}

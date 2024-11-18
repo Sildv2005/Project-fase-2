@@ -1,0 +1,306 @@
+.r-advantages-part{
+	.r-advantage-main-part{
+		background:#f8f4da; padding-bottom:110px;
+		.advantage-head{
+			text-align:center; text-align: center; padding:150px 0 50px;
+			span {font-size: 14px; color:#333; letter-spacing:3px; position: relative; z-index: 1;}
+			h2 {font-size:40px; color:#333; font-weight:300; padding-top:20px;position: relative; z-index: 1;
+				b{ font-weight:700;}
+			}
+			&::after{content: "A"; font-size: 200px; color: #f1ecd0; font-weight: 700;  position: absolute;  left: 0;  right: 0; top:50px;}
+		}
+		.r-advantages-box{margin-bottom: 30px; background:#fff; min-height:250px; text-align:center; padding-top:15px; padding-left:50px; padding-right:50px; cursor:pointer;
+			-webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			-ms-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+			.icon{ font-size:60px; color:$accent_color; margin-bottom: 15px; -webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			-ms-transition: all 0.3s linear;
+			transition: all 0.3s linear;
+
+			}
+			.head{ font-size:20px; color:#333; font-weight:500; -webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			-ms-transition: all 0.3s linear;
+			transition: all 0.3s linear;}
+			.sub-text{ font-size:13px; color:#999; padding-top:10px; -webkit-transition: all 0.3s linear;
+			-moz-transition: all 0.3s linear;
+			-ms-transition: all 0.3s linear;
+			transition: all 0.3s linear;}
+			&:hover{box-shadow: 0 0 40px #ccc; background:$accent_color;
+				.icon{ color:#fff;
+					img{
+						filter: brightness(0) invert(100%);
+					}
+				}
+				.head{ color:#fff;}
+				.sub-text{ color:#fff;}
+			}
+		}
+	}
+	.r-advantage-main-part-white{
+		background: #fff;
+		.r-advantages-box{background-color: #fafafa;}
+		.advantage-head::after{color: #f8f8f8;}
+	}
+	.offers-head{ text-align:center; text-align: center; padding:100px 0 70px;
+		span{font-size: 14px; color:#333; letter-spacing:3px;}
+		h2{font-size:40px; color:#333; font-weight:300; padding-top:20px;
+			b{ font-weight:700;}
+		}
+		&::after{content: "S"; font-size: 200px; color: #f8f8f8; font-weight: 700;  position: absolute;  left: 0;  right: 0; top:0; z-index:-1;}
+	}
+	.r-what-offers{ padding-bottom:150px;
+		.col-xl-3 { padding:0;}
+		.r-offers-box{ border-right:solid 1px #eeeeee; border-bottom:solid 1px #eeeeee; min-height:250px; text-align:center; padding-top:30px; padding-left:30px; padding-right:30px; cursor:pointer;
+			-webkit-transition: all 0.1s linear;
+			-moz-transition: all 0.1s linear;
+			-ms-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+			.icon{ font-size:60px; color:$accent_color; margin-bottom: 0;}
+			.head{ font-size:20px; color:#333; font-weight:500;}
+			.sub-text{ font-size:13px; color:#999; padding-top:10px;}
+			&:hover{box-shadow: 0 0 40px #ccc; background:#fff; margin:-10px;}
+			&::after { content: ""; width: 18px; height: 18px; background: #eee; display: block; position: absolute;
+    				   right: -9px; bottom: -9px;-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */   transform: rotate(45deg); /* Standard syntax */}
+		}
+		.r-what-offers-last-row{
+			.r-offers-box{ border-bottom:none;
+				&::after { display:none;}
+			}
+		}
+	}
+}
+
+
+.r-new-member{
+	padding: 115px 0; background-image: url("../images/new-member-bg.jpg"); background-repeat: no-repeat; background-size: 100% 600px;
+	.r-sec-head{
+		span{color: #fff;}
+		h2{color: $accent_color;}
+		&.r-sec-head-left::after{
+			color: #484746; top: -20px; left: -70px;
+		}
+	}
+	.r-discounted-car{
+		.r-discount-single{
+			position: relative; padding-left: 115px;
+			> a{
+				position: absolute; left: 0; max-width: 100px; top: 0;
+				img{max-width: 100%;}
+			}
+			.r-discount-content .r-starts{
+				list-style: none;
+				li{
+					display: inline-block;
+					i{color: $accent_color; font-size: 14px;}
+				}
+			}
+			h4{
+				margin-bottom: 2px;
+				a{color: #fff; font-weight: 600; font-size: 21px; &:hover{color: $accent_color;}}
+			}
+			.r-price-discount{
+				color: #fff; font-size: 13px; margin-bottom: 3px;
+				span{text-decoration: line-through; color: #777777;}
+			}
+			ul.r-car-point{
+				padding-left: 0; list-style: none; @extend .clearfix;
+				li{
+					display: inline-block; color: #999; background-color: #444444; padding: 2px 10px;
+					&:hover{
+						background-color: $accent_color;  color: #fff;
+						i{color: #fff;}
+					}
+					i{font-size: 12px; color: #999; display: inline-block; margin-right: 5px;}
+					span{font-size: 11px;}
+				}
+			}
+		}
+	}
+	&.r-new-member-dark{
+		background-image: url("../images/who-royal-bg-2.jpg");
+	}
+}
+
+@media (max-width: 1400px){
+	.r-advantages-part{
+	 .r-advantage-main-part {
+			padding-bottom: 80px;
+			.advantage-head{
+				padding: 80px 0 50px;
+				&::after{
+					font-size: 150px;
+					top: 0;
+				}
+				h2{
+					font-size: 32px;
+					padding-top: 10px;
+				}
+			}
+			.r-advantages-box .head{
+				font-size: 16px;
+			}
+		}
+		.offers-head{
+			padding: 80px 0 50px;
+			&::after{
+				font-size: 150px;
+				top: 0;
+			}
+			h2{
+				font-size: 32px;
+				padding-top: 10px;
+			}
+		}
+	}
+
+	.r-new-member{
+		padding: 80px 0;
+	}
+
+	.r-new-member .r-discounted-car .r-discount-single h4 a{
+		font-size: 18px;
+	}
+
+	.r-advantages-part .r-what-offers{
+		padding-bottom: 80px;
+	}
+
+}
+
+@media (max-width: 1200px){
+	.r-new-member .r-sec-head.r-sec-head-left::after{
+		left: -30px;
+	}
+	.r-advantages-part {
+		.r-advantage-main-part {
+			padding-bottom: 80px;
+			.r-advantages-box{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			.advantage-head{
+				padding-top: 50px;
+				&::after{
+					font-size: 120px;
+				}
+			}
+		}
+	}
+
+	.r-new-member {
+		padding: 50px 0;
+		.r-discounted-car {
+			.r-discount-single{
+				h4 a{
+					font-size: 16px;
+				}
+				.r-discount-content .r-starts li i{
+					font-size: 12px;
+				}
+				.r-price-discount{
+					font-size: 12px;
+				}
+				 ul.r-car-point li{
+					 margin-bottom: 5px;
+				 }
+			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.r-discount-single{
+		margin-bottom: 20px;
+	}
+	.r-advantages-box{
+		margin-bottom: 20px;
+	}
+	.r-advantages-part .r-advantage-main-part {
+		padding-bottom: 30px;
+	}
+
+	.r-advantages-part .r-what-offers{
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 767px){
+	.r-advantages-part .r-advantage-main-part{
+		padding-bottom: 30px;
+	}
+	.r-new-member{
+		padding: 30px 0;
+	}
+	.r-new-member{
+		background-size: cover;
+	}
+	.r-advantages-part .r-what-offers .r-offers-box .head{
+		font-size: 18px;
+	}
+
+	.r-advantages-part .r-what-offers{
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 480px){
+	.r-advantages-part {
+		.r-advantage-main-part .advantage-head{
+			padding: 30px 0;
+			span{
+				font-size: 13px;
+			}
+			h2{
+				font-size: 26px;
+			}
+			&::after{
+				font-size: 100px;
+			}
+		}
+		.offers-head{
+			padding: 30px 0px;
+			&::after{
+				font-size: 100px;
+				top: 0;
+			}
+			h2{
+				font-size: 26px;
+				padding-top: 10px;
+			}
+		}
+	}
+
+	.r-new-member .r-sec-head h2{
+		font-size: 24px;
+		padding-left: 0;
+		padding-right: 0;
+		line-height: 32px;
+	}
+	.r-new-member .r-sec-head.r-sec-head-left::after{
+		left: 0;
+	}
+
+	.r-advantages-part .r-what-offers{
+		.r-offers-box{
+			min-height: 210px;
+			&::after{
+				display: none;
+			}
+		}
+		.r-what-offers-last-row {
+			.r-offers-box{
+				border-bottom: 1px solid #eee;
+			}
+			&:last-of-type{
+				.r-offers-box{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+}

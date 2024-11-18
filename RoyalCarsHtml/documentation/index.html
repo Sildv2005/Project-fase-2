@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <title>Royal Cars - Html Template</title>
+    <meta charset="utf-8">
+	<meta name="description" content="Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us at jakjim@gmail.com.">
+	<meta name="author" content="jThemes Studio">
+	<meta name="copyright" content="jThemes Studio">
+	<meta name="generator" content="Documenter v2 http://rxa.li/documenter">
+	<meta name="date" content="2015-05-01T00:00:00+00:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<script src="js/jquery.1.6.4.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#374146;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+        h1,h2,h3,h4,h5,h6 {color:#0d1d31;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo-white.png); background-size: 190px;background-color: #000;}
+		a{color:#dc143c;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#f5f5f5;color:#222222;}
+		#documenter_sidebar ol{border-top:1px solid #435469;}
+		#documenter_sidebar ol a{border-top:1px solid #f5f5f5;border-bottom:1px solid #c5c7c9;color:#374146;}
+		#documenter_sidebar ol a:hover{background:#435469;color:#ffffff;border-top:1px solid #435469;}
+		#documenter_sidebar ol a.current{background:#0d1d31;color:#ffffff;border-top:1px solid #0d1d31;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#files_structure">Files Structure</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#css_structure">CSS Structure</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#fonts">Fonts</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#logo">Logo</a></li>
+			<li><a href="#sliders">Sliders</a></li> 
+			<li><a href="#google-map">Google Map</a></li> 
+			<li><a href="#social_media_icons">Social Media - Icons</a></li> 
+            <li><a href="#source_credits">Source & Credits</a></li>
+		</ol>
+		<div id="documenter_copyright">
+            Copyright jThemes Studio 2015<br>
+		    made with the <a href="http://rxa.li/documenter">Documenter v2</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+
+    <!-- -->
+
+	<section id="documenter_cover">
+        <h1>Royal Cars</h1>
+        <h2>Html Template</h2>
+        <hr>
+        <ul>
+            <li>Created: 2018-06-03</li>
+            <li>latest Update: 2018-06-03</li>
+            <li>By: jThemes Studio</li>
+            <li><a href=""></a></li>
+            <li>Email: <a href="mailto:jakjim@gmail.com">jakjim@gmail.com</a></li>
+        </ul>
+        <p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us.</p>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="files_structure">
+        <h3>Files Structure</h3>
+        <hr class="notop">
+        <pre>
+
+            - assets/css     (Template CSS) 
+            - assets/images     (All Images)
+            - assets/js      (Template JS) 
+            - assets/fonts      (Template Fonts)  
+        </pre>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="html_structure">
+        <h3>HTML Structure</h3>
+        <hr class="notop">
+        <p>The template is based on <strong>Bootstrap 4</strong>Framework - <a href="https://v4-alpha.getbootstrap.com/">http://getbootstrap.com/</a><br>
+            The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a <strong>1170px </strong>wide depending on your viewport.<br>
+            Below 480px viewports, the columns become fluid and stack vertically.
+        </p>
+        <p>Create a .row and add the appropriate number of .col-sm-* columns.</p>
+        <h4>HTML Markup</h4>
+        <pre class="brush: html">
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-xl-12&quot;&gt;
+                Level 1 column
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;Level 2&lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;Level 2&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </pre>
+        <p>If you need more information, please visit this site: <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></p>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="css_structure">
+        <h3>CSS Structure</h3>
+        <hr class="notop">
+        <p>The organization of the CSS is one of our priorities.<br>
+            These are the CSS file we&#39;re using in the template:
+        </p>
+        <pre>
+
+        - assets
+            - css
+                - main.css        - (Main CSS file) 
+                - ...
+        </pre>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="javascript">
+        <h3>Javascript</h3>
+        <hr class="notop">
+        <p><strong>jQuery </strong>- is a Javascript library that greatly reduces the amount of code that you must write.<br>
+            For more information, please visit <a href="http://www.jquery.com/">http://www.jquery.com/</a></p>
+        <p>All the JavaScript libraries and files are included at the bottom of every HTML page like this:</p>
+        <pre class="brush: html">
+            <script src="assets/js/jquery.min.js"></script>
+        </pre>
+        <p>The initializations and parameters (sliders, effects, etc.) are contained in <strong>assets/js/custom.js</strong></p>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="fonts">
+        <h3>Fonts</h3>
+        <hr class="notop">
+        <p>To change the embedded font, please take a look in the head part of html page:</p>
+        <pre>
+  
+            < link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" >
+
+
+        </pre>
+        <p>To change the font, first go to http://www.google.com/webfonts choose a font and add the generated code to the top of html page.</p>
+        <p>Then edit font-family in </p>
+        <pre>
+
+            body {
+              font-size: 1rem;
+              font-weight: normal;
+              line-height: 1.5;
+              color: #292b2c;
+              background-color: #fff;
+            }
+        </pre>
+        <p>and</p>
+        <pre>
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: normal;
+                color: #141f23;
+            }
+        </pre>
+        <p>and</p>
+        <pre>
+
+            .btn-primary {
+              padding: 15px 30px;
+              display: inline-block;
+              background: #ffcd00;
+              color: #ffffff;
+              border: none;
+              cursor: pointer;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              transition: all 0.2s linear; 
+            }
+        </pre>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="icons">
+        <h3>Icons</h3>
+        <hr class="notop">
+        <p><strong>Font Awesome</strong> is a @font-face iconset that you can change size and color of the icons usingCSS.</p>
+        <p>If you need more information, please visit this site: <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a></p>
+        <p>&nbsp;</p>
+        <h4>HTML Markup:</h4>
+        <pre class="brush: html">
+        &lt;i class=&quot;fa-edit&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa-search&quot;&gt;&lt;/i&gt;
+        ...
+        </pre>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+    <section id="logo">
+        <h3>Logo</h3>
+        <hr class="notop">
+        <p>Open index.html and find this part of code</p>
+
+        <h4>HTML Markup:</h4>
+        <pre class="brush: html">
+
+        <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo-white.png" alt=""/></a>
+            </div>
+        <!-- /Logo -->
+
+         </pre>
+
+        <p>and past path to your logo image:</p>
+
+        <pre class="brush: html">
+
+        <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/... path to your image logo ..." alt=""/></a>
+            </div>
+        <!-- /Logo -->
+        </pre>
+
+
+    </section>
+
+    <!-- -->
+
+    <section id="sliders">
+        <h3>Sliders</h3>
+        <hr class="notop">
+        <h4>Owl Carousel</h4>
+        <p><strong>Owl Carousel </strong>is the slider you&#39;ll find in the content.</p>
+        <p>It's an easy to use lightweight carousel with some decent features.</p>
+        <p>You can find more documentation here <a href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a></p> 
+    </section> 
+
+     
+    <!-- -->
+
+    <section id="google-map">
+        <h3>Google Map</h3>
+        <hr class="notop">
+        <p>Open assets/js/theme.js and find function initGoogleMap and set your coordinates for map and marker.</p>
+        <p>in line: center: new google.maps.LatLng(40.9807648, 28.9866516) past your coordinates for map
+            example: center: new google.maps.LatLng(your coordinates goes here)
+            </p>
+        <p>in line: position: new google.maps.LatLng(41.0096559,28.9755535), past your coordinates for marker
+            example: position: new google.maps.LatLng(your coordinates goes here)<br/>
+        </p>
+        <p><a href="https://support.google.com/maps/answer/18539?hl=en">https://support.google.com/maps/answer/18539?hl=en</a></p>
+        <p>If you wont change icon for marker replace 'icon-google-map.png' by your icon in 'assets/img/' folder</p>
+        <pre class="brush: js">
+            // Google map
+            initGoogleMap: function() {
+                var map;
+                var marker;
+                var image = 'assets/img/icon-google-map.png'; // marker icon
+                function initialize() {
+                    var mapOptions = {
+                        scrollwheel: false,
+                        zoom: 12,
+                        center: new google.maps.LatLng(40.9807648, 28.9866516) // map coordinates
+                    };
+                    map = new google.maps.Map(document.getElementById('map-canvas'),
+                        mapOptions);
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(41.0096559,28.9755535), // marker coordinates
+                        map: map,
+                        icon: image,
+                        title: 'Hello World!'
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            }
+        </pre>
+        <p>&nbsp;</p>
+    </section> 
+
+    <section id="social_media_icons">
+        <h3>Social Media - Icons</h3>
+        <hr class="notop">
+        <p> We are using FontAwesome for social media icons in this template. Insert icons like this:</p>
+        <pre class="brush: html">
+            <i class="fa fa-google-plus"></i>
+        </pre>
+        <p>Here's the complete list of available icons from FontAwesome docs:</p>
+        <p><img src="assets/images/docs-social.gif" alt="FontAwesome social icons"></p>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+     
+    <!-- -->
+
+    <section id="source_credits">
+        <h3>Source & Credits</h3>
+        <hr class="notop">
+        <p>&nbsp;</p>
+        <p>Fonts:<br>
+            <strong>Google Fonts</strong> - <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a><br>
+            <strong>Icons Font-face</strong> - <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a><br>
+        </p>
+        <p>Scripts:<br>
+            <strong>jQuery</strong> - <a href="http://www.jquery.com/">http://www.jquery.com/</a><br> 
+            <strong>Bootstrap Framework</strong> - <a href="http://getbootstrap.com/">http://getbootstrap.com/</a><br>
+            <strong>Bootstrap-select</strong> - <a href="http://silviomoreto.github.io/bootstrap-select/">http://silviomoreto.github.io/bootstrap-select/</a><br>
+            <strong>Font Awesome</strong> - <a href="http://fontawesome.io/">http://fontawesome.io/</a><br>
+            <strong>Owl Carousel 2</strong> - <a href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a><br> 
+        </p>
+        <p class="info">The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+        <p>&nbsp;</p>
+        <p>Images:<br>
+            <a href="http://#/">http://#/</a><br>
+        </p>
+        <h4><strong>jThemes Studio</strong></h4>
+        <p>&nbsp;</p>
+    </section>
+
+    <!-- -->
+
+	</div>
+</body>
+</html>

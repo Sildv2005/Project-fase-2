@@ -1,0 +1,104 @@
+/*gallery page*/
+.r-gallery-part{
+	padding:145px 0;
+	ul{
+		margin:0; padding:0;
+		li{
+            a{color: $accent_color_black;}
+			float: left; width:33.33%; list-style:none; position:relative; cursor:pointer;
+			.gallery-hover{ display:block; width: 90%; height: 90%; background:$accent_color;  position:absolute; top:50%; left: 50%;opacity: 0;
+								-webkit-transform: translate(-50%, -50%);
+								-moz-transform: translate(-50%, -50%);
+								-ms-transform: translate(-50%, -50%);
+								transform: translate(-50%, -50%);
+                -webkit-transition: all 0.2s linear;
+                -moz-transition: all 0.2s linear;
+                -ms-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+            }
+            .gallery-text{ position:absolute; bottom:35px; padding-left:35px; width:100%;
+					span{ font-size:13px; padding-bottom:15px;}
+					h5{ font-size:20px; }
+					.icon-gallery{ background:#fff; width:36px; height:36px; text-align: center; border-radius:50%;float: right;
+    					margin-right: 35px; margin-top: -44px;
+						i{ color:$accent_color; font-size:25px; line-height:36px; }
+					}
+				}
+			&:hover{
+				.gallery-hover{ opacity:0.95;
+
+				}
+			}
+		}
+	}
+}
+
+.r-gallery-part-home{
+	padding: 0;
+	&.r-gallery-part ul li{
+		width: 20%;
+		.gallery-text{
+			padding-left: 0; width: 35px; left: 0; right: 0; margin: auto; top: 0; bottom: 0; height: 35px;
+			.icon-gallery{margin: 0;}
+		}
+	}
+}
+
+
+@media (max-width: 1400px) {
+	.r-gallery-part{
+		padding: 100px 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.r-gallery-part{
+		padding: 80px 0;
+	}
+
+	.r-gallery-part ul li .gallery-text{
+		padding: 15px;
+		bottom: 0px;
+		.icon-gallery{
+			position: absolute;
+	    top: 10px;
+	    right: 10px;
+	    width: 26px;
+	    height: 26px;
+	    margin: 0;
+
+			i{
+				font-size: 15px;
+				line-height: 26px;
+			}
+		}
+	}
+
+
+
+}
+
+@media (max-width: 1024px) {
+	.r-gallery-part{
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.r-gallery-part{
+		padding: 30px 0;
+	}
+	.r-gallery-part ul li{
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.r-gallery-part ul li{
+		width: 100%;
+		margin-bottom: 15px;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
