@@ -10,11 +10,28 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
             background-color: #f4f4f4;
         }
+        /* Navigatiebalk stijl */
+        nav {
+            background-color: #333;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
         .contact-container {
             text-align: center;
             background: #fff;
@@ -22,6 +39,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 300px;
+            margin-top: 20px;
         }
         .contact-container h1 {
             margin-bottom: 20px;
@@ -43,6 +61,14 @@
     </style>
 </head>
 <body>
+    <!-- Navigatiebalk -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reserveringspagina.html">Reserveren</a>
+        <a href="contact.html">Contact</a>
+        <a href="overons.html">Over ons</a>
+    </nav>
+
     <div class="contact-container">
         <h1>Contact</h1>
         <p>Telefoon: <a href="tel:+31612345678">+31 6 12345678</a></p>

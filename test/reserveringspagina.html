@@ -11,6 +11,24 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        /* Navigatiebalk stijl */
+        nav {
+            background-color: #333;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
         .reservation-container {
             max-width: 600px;
             margin: 40px auto;
@@ -53,6 +71,14 @@
 </style>
 </head>
 <body>
+    <!-- Navigatiebalk -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reserveringspagina.html">Reserveren</a>
+        <a href="contact.html">Contact</a>
+        <a href="overons.html">Over ons</a>
+    </nav>
+
 <div class="reservation-container">
 <h1>Maak een Reservering</h1>
 <form action="https://formspree.io/f/your_form_id" method="POST">
