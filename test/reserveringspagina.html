@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserveren</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .reservation-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .reservation-container h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .reservation-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .reservation-container input,
+        .reservation-container select,
+        .reservation-container button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .reservation-container button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .reservation-container button:hover {
+            background-color: #0056b3;
+        }
+        .reservation-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+</style>
+</head>
+<body>
+<div class="reservation-container">
+<h1>Maak een Reservering</h1>
+<form action="https://formspree.io/f/your_form_id" method="POST">
+<!-- Reserveringsdatum -->
+<label for="date">Datum</label>
+<input type="date" name="date" id="date" required>
+<!-- Reserveringstijd -->
+<label for="time">Tijd</label>
+<input type="time" name="time" id="time" required>
+<!-- Aantal personen -->
+<label for="guests">Aantal personen</label>
+<select name="guests" id="guests" required>
+<option value="1">1 persoon</option>
+<option value="2">2 personen</option>
+<option value="3">3 personen</option>
+<option value="4">4 personen</option>
+<option value="5">5 personen</option>
+<option value="6">6 personen</option>
+<option value="7">7 personen</option>
+<option value="8">8 personen</option>
+</select>
+<!-- Naam -->
+<label for="name">Naam</label>
+<input type="text" name="name" id="name" placeholder="Je naam" required>
+<!-- E-mail -->
+<label for="email">E-mail</label>
+<input type="email" name="email" id="email" placeholder="Je e-mailadres" required>
+<!-- Verzendknop -->
+<button type="submit">Reserveren</button>
+</form>
+</div>
+</body>
+</html>
