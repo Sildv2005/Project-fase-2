@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacht Reserveren</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Terug naar Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reserverings-sectie">
+      <h1>Reservering</h1>
+      <form id="reserveringForm">
+        <label for="jachtnaam">Jachtnaam:</label>
+        <input type="text" id="jachtnaam" name="jachtnaam" readonly>
+
+        <label for="vertrekdatum">Vertrekdatum:</label>
+        <input type="text" id="vertrekdatum" name="vertrekdatum" readonly>
+
+        <label for="locatie">Locatie:</label>
+        <input type="text" id="locatie" name="locatie" readonly>
+
+        <label for="naam">Uw naam:</label>
+        <input type="text" id="naam" name="naam" placeholder="Uw naam" required>
+
+        <label for="email">Uw e-mailadres:</label>
+        <input type="email" id="email" name="email" placeholder="Uw e-mail" required>
+
+        <button type="submit">Bevestig Reservering</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // Haal de jachtgegevens op uit de URL
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('jachtnaam').value = params.get('naam');
+    document.getElementById('vertrekdatum').value = params.get('vertrek');
+    document.getElementById('locatie').value = params.get('locatie');
+
+    // Verwerk het formulier
+    document.getElementById('reserveringForm').addEventListener('submit', (e) => {
+      e.preventDefault(); // voorkom herladen van de pagina
+
+      // Haal formulierwaarden op
+      const naam = document.getElementById('naam').value;
+      const email = document.getElementById('email').value;
+      const jachtnaam = document.getElementById('jachtnaam').value;
+      const vertrekdatum = document.getElementById('vertrekdatum').value;
+      const locatie = document.getElementById('locatie').value;
+
+      // Simuleer reserveringsbevestiging
+      alert(`Reservering bevestigd voor ${naam}:\n
+        Jacht: ${jachtnaam}\n
+        Vertrekdatum: ${vertrekdatum}\n
+        Locatie: ${locatie}\n
+        Bevestiging gestuurd naar: ${email}`);
+      
+      // Optioneel: Stuur naar een bedankpagina of reset het formulier
+      window.location.href = "index.html"; // Terug naar home
+    });
+  </script>
+</body>
+</html>
