@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoekresultaten</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Terug naar Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="resultaten-sectie">
+      <h1>Zoekresultaten</h1>
+      <div id="resultatenLijst">
+        <!-- Dynamisch gegenereerde zoekresultaten -->
+      </div>
+      <a href="index.html" class="terug-knop">Nieuwe Zoekopdracht</a>
+    </section>
+  </main>
+
+  <script>
+    // Haal de zoekterm op uit de URL
+    const params = new URLSearchParams(window.location.search);
+    const zoekterm = params.get('zoekterm').toLowerCase();
+
+    // Voorbeeldlijst van jachten
+    const jachten = [
+      { naam: "Klassiek Zeiljacht", vertrek: "22-11-2024", locatie: "Hilversum" },
+      { naam: "Moderne Zeiljacht", vertrek: "25-11-2024", locatie: "Nijmegen" },
+      { naam: "Catamaran", vertrek: "10-12-2024", locatie: "Apeldoorn" },
+      { naam: "Sportmotorjacht", vertrek: "15-12-2024", locatie: "Utrecht" },
+      { naam: "Luxe Motorjacht", vertrek: "01-01-2025", locatie: "Rotterdam" }
+    ];
+
+    // Filter de jachten op basis van de zoekterm
+    const resultaten = jachten.filter(jacht => jacht.naam.toLowerCase().includes(zoekterm));
+
+    // Toon de resultaten op de pagina
+    const resultatenLijst = document.getElementById('resultatenLijst');
+    if (resultaten.length > 0) {
+      resultaten.forEach(resultaat => {
+        const div = document.createElement('div');
+        div.classList.add('resultaat');
+
+        div.innerHTML = `
+          <h2>${resultaat.naam}</h2>
+          <p>Vertrekdatum: ${resultaat.vertrek}</p>
+          <p>Locatie: ${resultaat.locatie}</p>
+          <button onclick="reserveerJacht('${resultaat.naam}', '${resultaat.vertrek}', '${resultaat.locatie}')">Reserveer</button>
+        `;
+        resultatenLijst.appendChild(div);
+      });
+    } else {
+      resultatenLijst.innerHTML = "<p>Geen resultaten gevonden voor jouw zoekopdracht.</p>";
+    }
+
+    // Functie om een jacht te reserveren
+    function reserveerJacht(naam, vertrek, locatie) {
+      // Sla informatie op en navigeer naar de reserveringspagina
+      window.location.href = `reserveren.html?naam=${encodeURIComponent(naam)}&vertrek=${encodeURIComponent(vertrek)}&locatie=${encodeURIComponent(locatie)}`;
+    }
+  </script>
+</body>
+</html>
