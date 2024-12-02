@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Over ons</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over ons</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+        /* Navigatiebalk stijl */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
         .about-container {
             max-width: 800px;
             margin: 40px auto;
@@ -18,51 +36,31 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .about-container h1 {
-            text-align: center;
             font-size: 2em;
             color: #333;
-            margin-bottom: 20px;
         }
         .about-container p {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 1.2em;
             color: #555;
-            margin-bottom: 20px;
         }
-        .about-container h2 {
-            font-size: 1.5em;
-            color: #333;
-            margin-top: 30px;
-        }
-        .about-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .about-container li {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 10px;
-        }
-</style>
+    </style>
 </head>
 <body>
-<div class="about-container">
-<h1>Over ons</h1>
-<p>Welkom bij [Bedrijfsnaam], jouw betrouwbare partner voor [beschrijving van de diensten of producten]. Sinds onze oprichting in [jaartal], hebben we ons ingezet om kwaliteitsservice te leveren en altijd aan de verwachtingen van onze klanten te voldoen.</p>
-<p>Ons team bestaat uit enthousiaste professionals die passie hebben voor wat ze doen. We streven ernaar om de best mogelijke ervaring te bieden, of het nu gaat om [domeinen van specialisatie], of om [specifieke diensten].</p>
-<h2>Wat we doen</h2>
-<ul>
-<li>[Dienst 1]</li>
-<li>[Dienst 2]</li>
-<li>[Dienst 3]</li>
-</ul>
-<h2>Onze Missie</h2>
-<p>Onze missie is om [missie of doelstelling van het bedrijf]. We geloven in [kernwaarden of filosofieën] en streven ernaar om een positieve impact te maken op onze klanten en de samenleving.</p>
- 
-        <h2>Ons Team</h2>
-<p>Ons team bestaat uit professionals die zich toegewijd hebben aan het leveren van uitzonderlijke resultaten. Van [rol 1] tot [rol 2], we werken nauw samen om jouw ervaring met ons bedrijf onvergetelijk te maken.</p>
-</div>
+    <!-- Navigatiebalk -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reserveringspagina.html">Reserveren</a>
+        <a href="contact.html">Contact</a>
+        <a href="overons.html">Over ons</a>
+    </nav>
+
+    <!-- Over ons inhoud -->
+    <div class="about-container">
+        <h1>Over Ons</h1>
+        <p>Wij zijn een bedrijf dat zich richt op het leveren van de beste service voor al onze klanten. Ons team bestaat uit gepassioneerde professionals die altijd klaarstaan om te helpen.</p>
+    </div>
 </body>
 </html>
