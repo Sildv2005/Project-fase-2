@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    background-color: #ffcd00;
+    background-color: #333333;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,7 +11,7 @@ nav {
 }
 nav a {
     display: inline-block;
-    color: black;
+    color: #ffff;
     padding: 14px 20px;
     text-decoration: none;
 }
@@ -20,9 +20,14 @@ nav a:hover {
     color: black;
 }
 
-body {
-    background-color: #333333;
+nav img {
+  position: fixed;
+  left: 30px;
+  width: 150px; /* Pas de breedte van het logo aan */
+  height: auto;
 }
+
+
 header {
     background-color: #85c1e9; /* Lichtblauw zoals in de wireframe */
     color: black;
@@ -35,7 +40,7 @@ header {
     margin: 50px auto;
     padding: 20px;
     max-width: 600px;
-    background: #ffcd00; /* Lichtgroene achtergrond */
+    background: #ffcd00; /* gele achtergrond */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
