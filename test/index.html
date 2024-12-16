@@ -46,35 +46,34 @@
 
         /* Container voor afbeeldingen en tekst naast elkaar */
         .content-container {
-            display: flex;                    /* Gebruik flexbox om de inhoud naast elkaar te zetten */
-            justify-content: center;          /* Zorg ervoor dat de inhoud gecentreerd wordt */
-            align-items: flex-start;          /* Zorg ervoor dat de items bovenaan uitgelijnd zijn */
-            gap: 20px;                        /* Ruimte tussen de afbeelding en tekst */
+            display: flex;                    /* Gebruik flexbox */
+            justify-content: center;          /* Centreer horizontaal */
+            align-items: center;              /* Centreer verticaal */
+            gap: 20px;                        /* Ruimte tussen items */
             margin-top: 20px;
-            flex-wrap: wrap;                  /* Zorgt ervoor dat de items naar een nieuwe regel gaan op kleinere schermen */
+            flex-wrap: wrap;                  /* Regel items op kleinere schermen */
         }
 
         /* Stijl voor de afbeelding container */
         .image-container {
-            flex: 1;                          /* Flexibele breedte voor de afbeelding */
+            flex: 1 1 300px;                  /* Flex-grow, shrink en basisbreedte */
             max-width: 300px;                 /* Max breedte voor de afbeelding */
             text-align: left;
-            position: relative;               /* Voor de overlay */
+            position: relative;
         }
 
         .image-container img {
             width: 100%;                      /* Zorg ervoor dat de afbeelding de container vult */
-            height: auto;                     /* Behoud de aspect ratio */
-            border-radius: 8px;               /* Optioneel: ronden de hoeken van de afbeelding af */
-            transition: opacity 0.3s ease-in-out;  /* Maak de overgang van donkerder worden vloeiend */
+            height: 200px;                     /* Behoud de aspect ratio */
+            border-radius: 8px;               /* Ronde hoeken */
+            transition: opacity 0.3s ease-in-out; /* Vloeiende hover overgang */
         }
 
-        /* Overlay voor afbeelding als je er met de muis overheen gaat */
+        /* Overlay voor afbeelding */
         .image-container:hover img {
-            opacity: 0.7; /* Maak de afbeelding donkerder */
+            opacity: 0.7; /* Maak de afbeelding donkerder bij hover */
         }
 
-        /* Overlay tekst voor de afbeelding */
         .overlay {
             position: absolute;
             top: 0;
@@ -86,20 +85,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            opacity: 0;  /* Initial state van de overlay */
+            opacity: 0;  /* Begin met transparant */
             transition: opacity 0.3s ease-in-out;
             font-size: 1.5em;
             border-radius: 8px;
         }
 
         .image-container:hover .overlay {
-            opacity: 1;  /* Maak de overlay zichtbaar als je met de muis over de afbeelding gaat */
+            opacity: 1; /* Toon de overlay */
         }
 
         /* Stijl voor de tekst container */
         .text-container {
-            flex: 1;                          /* Flexibele breedte voor de tekst */
-            max-width: 500px;                 /* Max breedte voor de tekst */
+            flex: 2 1 500px;                 /* Flex-grow, shrink en basisbreedte */
+            max-width: 500px;
+            height: 200px;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -132,29 +132,23 @@
         <a href="klantinlog.html">Inloggen</a>
     </nav>
 
+    <!-- Content Secties -->
     <div class="content-container">
-        <!-- Klikbare afbeelding 3 -->
         <a href="reserveringspagina.html" class="image-container">
-            <img src="images/blue-boats-daylight-358326.jpg" alt="Afbeelding 3">
+            <img src="images/afbeelding1.jpg" alt="Afbeelding 3">
             <div class="overlay">Klik voor meer informatie</div>
         </a>
-
-        <!-- Tekst 3 -->
         <div class="text-container">
             <h2>Yachten voor elke gelegenheid</h2>
             <p>Of je nu een romantisch uitje zoekt of een groot evenement organiseert, we hebben de juiste jacht voor je. Onze jachten zijn volledig uitgerust voor een luxe ervaring op het water.</p>
         </div>
     </div>
 
-    <!-- Afbeeldingen en tekst naast elkaar -->
     <div class="content-container">
-        <!-- Klikbare afbeelding 1 -->
         <a href="reserveringspagina.html" class="image-container">
             <img src="images/adult-beauty-boat-2094737.jpg" alt="Afbeelding 1">
             <div class="overlay">Klik voor meer informatie</div>
         </a>
-
-        <!-- Tekst 1 -->
         <div class="text-container">
             <h2>Dagvaart ervaring</h2>
             <p>Ontdek de perfecte ervaring voor een dag op het water. Geniet van de frisse lucht, het geluid van de golven, en de mooie natuur om je heen. Onze dagvaarten bieden een onvergetelijke ervaring voor vrienden en familie.</p>
@@ -162,18 +156,14 @@
     </div>
 
     <div class="content-container">
-        <!-- Klikbare afbeelding 2 -->
         <a href="reserveringspagina.html" class="image-container">
-            <img src="images/backlit-boat-dawn-769228.jpg" alt="Afbeelding 2">
+            <img src="images/afbeelding2.jpg" alt="Afbeelding 2">
             <div class="overlay">Klik voor meer informatie</div>
         </a>
-
-        <!-- Tekst 2 -->
         <div class="text-container">
             <h2>Zonsondergang vaarten</h2>
             <p>Ervaar de magische zonsondergang op het water. Onze zonsondergang vaarten bieden het perfecte uitzicht terwijl de zon ondergaat. Het is een ervaring die je niet wilt missen!</p>
         </div>
     </div>
-
 </body>
 </html>
