@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <title>Klantinlog</title>
+    <title>Registreren</title>
 </head>
 <body>
     <nav>
@@ -15,15 +15,16 @@
         <a href="overons.html">Over ons</a>
         <a href="klantinlog.html">Inloggen</a>
     </nav>
-    <div class="login-container">
-        <h1>Klantinlog</h1>
-        <form action="verwerk_login.php" method="POST">
+
+    <div class="register-container">
+        <h1>Registreren</h1>
+        <form action="registratie_verwerken.php" method="POST">
+            <input type="text" name="naam" placeholder="Je naam" required>
             <input type="email" name="email" placeholder="E-mailadres" required>
             <input type="password" name="wachtwoord" placeholder="Wachtwoord" required>
-            <button type="submit">Inloggen</button>
+            <button type="submit">Registreren</button>
         </form>
-        <a href="wachtwoord_vergeten.html">Wachtwoord vergeten?</a>
-        <a href="registratie.html">Nog geen account?</a>
+        <p>Heb je al een account? <a href="klantinlog.html">Inloggen</a></p>
     </div>
 </body>
 </html>
