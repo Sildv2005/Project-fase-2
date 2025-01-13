@@ -4,7 +4,7 @@ session_start();
  
 // Databaseverbinding
 $host = 'localhost';  // Database host
-$dbname = 'project3'; // Naam van je database
+$dbname = 'project6'; // Naam van je database
 $user = 'root';       // Database-gebruiker
 $pass = '';           // Database-wachtwoord (leeg bij XAMPP)
  
