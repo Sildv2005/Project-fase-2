@@ -4,7 +4,7 @@ session_start();
  
 // Databaseverbinding
 $host = 'localhost';  
-$dbname = 'project3';
+$dbname = 'project6';
 $user = 'root';
 $pass = '';
  
