@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['email'] = $gebruiker['email'];
  
             // Redirect naar een dashboard of homepage
-            header("Location: dashboard.php");
+            header("Location: profile.php");
             exit;
         } else {
             echo "Onjuist wachtwoord.";
